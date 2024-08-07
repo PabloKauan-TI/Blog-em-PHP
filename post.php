@@ -24,21 +24,21 @@
             Suscipit earum at laborum, perferendis dolorum maxime, odio fuga, atque commodi architecto autem sed repudiandae incidunt accusamus aperiam. Sint quaerat quo facere odit eaque quidem vitae facilis soluta molestias fugiat.
             Nemo ipsam velit inventore eveniet, earum porro, sint fugiat quaerat praesentium reiciendis mollitia non nulla ipsum omnis necessitatibus accusantium? Hic quod id, mollitia placeat accusantium dignissimos consequuntur ipsum autem vitae?</p>
         </div>
+        <aside id="nav-container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tag-list">
+                <?php foreach($postAtual['tags'] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <h3 id="categories-title">Categories</h3>
+            <ul id="categories-list">
+                <?php foreach($categories as $category): ?>
+                    <li><a href="#"><?= $category ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside id="nav-container">
-        <h3 id="tags-title">Tags</h3>
-        <ul id="tag-list">
-            <?php foreach($postAtual['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-        <h3 id="categories-title">Categories</h3>
-        <ul id="categories-list">
-            <?php foreach($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </aside>
 <?php
     include_once("templates/footer.php");
 ?>

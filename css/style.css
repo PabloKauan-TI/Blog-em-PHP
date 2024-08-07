@@ -130,3 +130,82 @@ footer{
     display: inline-block;
     margin-right: 0.3rem;
 }
+
+#post-container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "main sidebar";
+    grid-gap: 2rem;
+    padding-top: 4rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+}
+
+.content-container{
+    grid-area: main;
+}
+
+#post-descriprion{
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+#main-title{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.post-content{
+    line-height: 1.8;
+    margin: 1rem 0;
+}
+
+.img-container{
+    margin-bottom: 0.3rem;
+}
+
+.img-container img{
+    width: 47rem;
+}
+
+.nav-container{
+    grid-area: sidebar;
+}
+
+#tags-title, #categories-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem;
+    font-weight: 300;
+}
+
+#tag-list, #categories-list{
+    list-style: none;
+}
+
+#tag-list, #categories-list li{
+    margin-bottom: 0.4rem;
+}
+
+#tag-list a{
+    color: #666;
+    transition: .5s;
+}
+
+#categories-list a{
+    color: #666;
+    transition: .5s;
+}
+
+#tag-list, #categories-list a:hover{
+    color: #000;
+}
+
+#tag-list a:hover{
+    color: #000;
+}
